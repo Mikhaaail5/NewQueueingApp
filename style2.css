@@ -10,12 +10,16 @@
 }
 
 body{
-    background-color: rgb(212, 212, 212);
+    /* background-color: rgb(212, 212, 212); */
+    background-image: url('images/MapuaBG.jpg');
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     font-weight: 300;
     color: var(--black-70);
-    min-height: 100vh;
+    /* min-height: 100vh; */
     overflow-x: hidden;
 }
 
