@@ -1,3 +1,63 @@
+:root{
+    --white: hsl(0, 0%, 100%);
+    --WHITE: hsl(0, 0%, 100%);
+    --BLACK: hsl(0, 0%, 0%);
+    --black-90: hsl(0, 0%, 10%);
+    --black-70: hsl(0, 0%, 30%);
+    --circle-color: hsl(277, 87%, 53%);
+    --light-yellow: hsla(58, 100%, 50%, 0.788);
+    --dark-blue: hsl(244, 86%, 53%);
+}
+
+body{
+    /* background-color: rgb(212, 212, 212); */
+    background-image: url('images/MapuaBG.jpg');
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: var(--black-70);
+    /* min-height: 100vh; */
+    overflow-x: hidden;
+}
+
+a{
+    color: var(--main-color);
+    text-decoration: none;
+}
+
+a:hover{
+ color: var(--main-color);
+}
+
+img{
+    max-width: 100%;
+}
+
+::selection{
+    color: var(--WHITE);
+    background-color: var(--main-color);
+}
+
+.header{
+    border-bottom: 1px solid;
+    background-color:rgb(40, 35, 35);
+    padding: 10px 0;
+}
+
+.header-logo a{
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: rgb(207, 199, 51);
+}
+
+.header-logo span{
+    color: rgb(229, 18, 18);
+ }
+ 
 body, html {
     height: 100%;
     margin: 0;
