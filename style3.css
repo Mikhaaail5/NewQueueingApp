@@ -1,0 +1,84 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    overflow: fixed;
+}
+
+.bgimg-1{
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("images/MapuaBG.jpg");
+    height: 100%
+}
+
+.rect{
+    position: absolute;
+    width: 1300px;
+    height: 700px;
+    left: 82px;
+    top: 30px;
+
+    background: rgba(31, 30, 30, 0);
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img1 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50%;
+}
+
+#logo{ 
+    position:fixed; 
+    top:50px; 
+    left:100px; 
+  
+} 
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.rate { 
+    float: left;
+    height: 46px;
+    padding: 0px 500px;
+}
+.rate:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+}
+.rate:not(:checked) > label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:60px;
+    color:#252323;
+}
+.rate:not(:checked) > label:before {
+    content: '★ ';
+}
+.rate > input:checked ~ label {
+    color: #ffc700;    
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+    color: #deb217;  
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+    color: #c59b08;
+}
