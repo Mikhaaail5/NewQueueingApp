@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>login</title>
+        <link rel="stylesheet" href="style1.css">
+        <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <form action="login.php" method="post">
+    <body class = "login">
+    <?php if (isset($_GET['error'])) { ?>
+
+    <p class="error"><?php echo $_GET['error']; ?></p>
+
+    <?php } ?>
+        <div class = "con1">
+            <div class = "title">
+                <p class = "title1">CARDINAL</p>
+                <p class = "title2">ACADEMIC</p>
+                <p class = "title3">ADVISING</p>
+            </div>
+            <img class = "icon" alt = "Mapua Icon" src = "images/MapuaIcon.png">
+        </div>
+        <div class = "con2">
+            <div class="email">
+                <input type="email" placeholder="Username"/>
+            </div>
+            <div class="password">
+                <input type="password" placeholder="Password"/>
+            </div>
+            <div>
+                <button class="btn" onclick="window.location.href='department.html'">LOGIN</button>
+            </div>
+        </div>
+    </body>
+</form>
+</html>
